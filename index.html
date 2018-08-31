@@ -1,0 +1,167 @@
+
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+		<h1> Your Quiz </h1>
+		
+		<label for="show-menu" class="show-menu">Menu</label>
+		
+		<input type="checkbox" id="show-menu" role="button">
+		
+		
+		<ul id="menu">
+			
+			<li><a href="index.html">Home</a></li>
+		
+			<li>
+				<a href="index.html"  >Restart</a>
+				<ul class="hidden">
+					<li><a href="#" id="pause" onclick="menu(0)">Pause</a></li>
+					<li><a href="#" id="exit" onclick="menu(1)">Exit</a></li>
+					<li><a href="#" id="save" onclick="menu(2)">Save</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<a href="#">Beginner</a>
+				<ul class="hidden">
+					<li><a href="#" id="level11" onclick="initializer(1)">Less Questions</a></li>
+					<li><a href="#" id="level12" onclick="initializer(2)">Medium Questions</a></li>
+					<li><a href="#" id="level13" onclick="initializer(3)">Max Questions</a></li>
+				</ul>
+			
+			</li>
+			
+			<li>
+				<a href="#">Normal</a>
+				<ul class="hidden">
+					<li><a href="#" id="level21" onclick="initializer(11)">Less Questions</a></li>
+					<li><a href="#" id="level22" onclick="initializer(12)">Medium Questions</a></li>
+					<li><a href="#" id="level23" onclick="initializer(13)">Max Questions</a></li>
+				</ul>
+			</li>
+			
+			<li>
+			   <a href="#">Genius</a>
+				<ul class="hidden">
+					<li><a href="#" id="level31" onclick="initializer(21)">Less Questions</a></li>
+					<li><a href="#" id="level32" onclick="initializer(22)">Medium Questions</a></li>
+					<li><a href="#" id="level33" onclick="initializer(23)">Max Questions</a></li>
+				</ul>
+			</li>
+			
+			<li>
+				<a href="#">Settings</a>
+				<ul class="hidden">
+					<li><a href="index.html" id="level41" onclick="personalize()"></a>
+					<input type="color" id="color"> Personalize your view </li>
+					
+					<li><a href="index.html">Sounds</a></li>
+				</ul>
+			</li>
+			<li><a href="#" id="about" onclick="about()">About us</a></li>
+		</ul>
+		
+		
+		
+	
+		<div class="starter no_bord" id="starter" >
+						<p id="report"></p>
+			</div>
+		
+	<div>
+		<div id="body">
+			<div class="header">
+				
+				<div class="main"></div>
+					
+						<div class="referee hidden">
+							<p id="chronograph">The timer will show here!</p>
+							<p id="score">0000</p>
+						</div>
+						<div class="questions hidden" id="qcontent">
+							<p id="question"></p>
+							<hr>
+							<p id="tip"></p>
+
+						</div>
+						<div class="assertion hidden">
+							<input type="button" class="button" value="A" onclick="check('a')">
+							<input type="button" class="button" value="B" onclick="check('b')">
+							<input type="button" class="button" value="C" onclick="check('c')">
+							<input type="button" class="button" value="D" onclick="check('d')">
+							<p id="notice"></p>
+						</div>	
+			</div>
+			
+			
+			<div id="footer">
+			<div>
+				<div class="report">
+					<h1>Previous Question</h1>
+					<p id="endreport">Previous questions stand here !</p>
+				</div>
+				
+				<div>
+					<h1>Connect</h1>
+					<a href="http://www.gmail.com/" target="_blank" id="mail">Email us</a>
+					<a href="http://www.facebook.com/" target="_blank" id="facebook">Facebook</a>
+					<a href="http://www.twitter.com/" target="_blank" id="twitter">Twitter</a>
+					<a href="http://www.googleplus.com/" target="_blank" id="googleplus">Google&#43;</a>
+				</div>
+			</div>
+	
+			<p>
+				A Mugisho &copy; 2018  | All Rights Reserved
+			</p>
+		</div>
+		
+		
+		</div>
+	
+	</div>
+
+	<script src="js/javascript.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
